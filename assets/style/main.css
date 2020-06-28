@@ -1,0 +1,39 @@
+.wrapper {
+    min-width: 1380px;
+    margin: 0 auto;
+}
+
+.table__section{
+    border-bottom: 1px solid #d4e1e9;
+}
+
+.table {
+    display: flex;
+    justify-content: flex-start;
+    border-left: 1px solid #d4e1e9;
+    border-right: 1px solid #d4e1e9;
+}
+
+.table__title__item {
+    background: lightgoldenrodyellow;
+}
+
+.table__item {
+    border: 1px solid #d4e1e9;
+    width: 100%;
+    padding: 0 20px;
+    text-align: left;
+    border-bottom: none;
+}
+
+.table__item:not(:first-child) {
+    border-left: none;
+}
+
+.table__item:first-child {
+    border-left: none;
+}
+
+.table__item:last-child {
+    border-right: none;
+}
