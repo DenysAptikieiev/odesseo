@@ -39,7 +39,6 @@ class NewPostService {
         const data = res.data.map(item => this._transformDeliveryPoint(item));
         return data;
     }
-
     _errorDeliveryPointInfo = (data) => {
         if (data) {
             return data;
@@ -47,7 +46,6 @@ class NewPostService {
             return `нет данных`;
         }
     }
-
     _transformDeliveryPoint = (point) => {
         return {
             ref: this._errorDeliveryPointInfo(point.ref),
